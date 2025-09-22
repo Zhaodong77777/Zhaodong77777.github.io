@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhao Dong — Economics</title>
+  <meta name="description" content="Zhao Dong — Applied Micro / Public Economics / Political Economy">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="container">
+  <div class="profile">
+    <img src="assets/profile.jpg" alt="profile" class="avatar">
+    <div>
+      <h1>Zhao Dong</h1>
+      <p>Applied Micro • Public Economics • Political Economy</p>
+      <p><a href="mailto:zhao.dong@economics.ox.ac.uk">zhao.dong@economics.ox.ac.uk</a></p>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#data">Data & Code</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section id="about">
+    <h2>About</h2>
+    <p>I am a job-market candidate in Economics (Ph.D. expected July 1, 2026). My research is in empirical public economics and political economy. I study how external shocks reallocate governing coalitions and the implications for state capacity and public finance. Methodologically, I use event study / staggered DiD, instrumented exposure designs, and text/archival data.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <article class="paper">
+      <h3>Job Market Paper</h3>
+      <p><strong>Shocks, Elites, and State Capacity: Evidence from Information‑Rich Administration</strong> <span class="tag">JMP</span></p>
+      <p><em>Abstract:</em> External shocks causally shift appointments toward loyalty; high information capacity dampens and shortens this shift; patrimonial drift is associated with lower tax efficiency, attenuated by information capacity.</p>
+      <p>
+        <a class="btn" href="#">Paper (PDF)</a>
+        <a class="btn" href="#">Slides</a>
+        <a class="btn" href="#">Appendix</a>
+      </p>
+    </article>
+
+    <article class="paper">
+      <h3>Working Papers</h3>
+      <ul>
+        <li><strong>Information Capacity as a Fiscal Stabilizer</strong> — IV using shock‑induced variation in elite composition. <a href="#">PDF</a></li>
+        <li><strong>Coalition Reallocation Across Dynasties</strong> — Cross‑dynasty Top‑Tier validation (50+ regimes). <a href="#">PDF</a></li>
+      </ul>
+    </article>
+
+    <article class="paper">
+      <h3>Work in Progress</h3>
+      <ul>
+        <li>Text‑as‑Data measures from decrees and memorials; administrative replication with modern data.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li><strong>Public Economics</strong> (UG/MSc): Tax incidence & efficiency; enforcement; program evaluation.</li>
+      <li><strong>Applied Econometrics</strong> (UG/MSc): DiD/event study; IV; RD; synthetic control; reproducibility.</li>
+      <li><strong>Political Economy/Economic History</strong> (elective): State capacity & elite selection.</li>
+    </ul>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <p><a class="btn" href="cv/Zhao_Dong_CV.pdf">Download CV (PDF)</a></p>
+  </section>
+
+  <section id="data">
+    <h2>Data & Code</h2>
+    <ul>
+      <li>Patrimonialism Index (annual) — <a href="#">repo</a> / <a href="#">data</a></li>
+      <li>Information Capacity Index — <a href="#">repo</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Department of Economics, University of Oxford<br>
+       Email: <a href="mailto:zhao.dong@economics.ox.ac.uk">zhao.dong@economics.ox.ac.uk</a></p>
+  </section>
+</main>
+
+<footer class="container small">
+  <p>© Zhao Dong · Last updated <span id="updated"></span></p>
+</footer>
+
+<script>
+  document.getElementById('updated').textContent = new Date().toISOString().slice(0,10);
+</script>
+</body>
+</html>
