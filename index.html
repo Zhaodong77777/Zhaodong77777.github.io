@@ -45,6 +45,32 @@
       margin: 0 auto;
       padding: 0 2rem;
     }
+    .about-container {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .profile-photo {
+      flex-shrink: 0;
+      width: 200px;
+    }
+    .profile-photo img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .about-text {
+      flex: 1;
+    }
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-photo {
+        width: 180px;
+      }
+    }
     section {
       background: white;
       margin: 2rem auto;
@@ -112,9 +138,16 @@
 <main class="container">
   <section id="about">
     <h2>About</h2>
-    <p>I am a PhD candidate in Economics at the University of Oxford, specializing in economic history, political economy, and development economics. My research examines elite selection, state capacity, and long-run economic development in historical China.</p>
-    
-    <p style="margin-top: 1rem;">My job market paper investigates how autocratic regimes balance political loyalty and administrative competence when appointing provincial elites, using comprehensive data from Late Qing China (1825-1911). I employ difference-in-differences methodology to identify causal effects of different crisis types on elite composition.</p>
+    <div class="about-container">
+      <div class="profile-photo">
+        <img src="photo/profile.jpg" alt="Dong Zhao">
+      </div>
+      <div class="about-text">
+        <p>I am a PhD candidate in Economics at the University of Oxford, specializing in economic history, political economy, and development economics. My research examines elite selection, state capacity, and long-run economic development in historical China.</p>
+        
+        <p style="margin-top: 1rem;">My job market paper investigates how autocratic regimes balance political loyalty and administrative competence when appointing provincial elites, using comprehensive data from Late Qing China (1825-1911). I employ difference-in-differences methodology to identify causal effects of different crisis types on elite composition.</p>
+      </div>
+    </div>
   </section>
 
   <section id="research">
