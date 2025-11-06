@@ -1,104 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zhao Dong — Economics</title>
- <meta name="description" content="Zhao Dong — Applied Micro / Economic History / Political Economy">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhao Dong - Economics PhD Candidate</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+    nav {
+      background: #2d5a3d;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover { background: rgba(255,255,255,0.1); }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    section {
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #1a472a;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #2d5a3d;
+    }
+    h3 {
+      color: #2d5a3d;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .paper {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    .paper:last-child { border-bottom: none; }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #2d5a3d;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #1a472a; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    ul { margin-left: 1.5rem; margin-top: 0.5rem; }
+    li { margin-bottom: 0.5rem; }
+    .small { font-size: 0.9rem; }
+  </style>
 </head>
 <body>
-<header class="container">
-  <div class="profile">
-    <img src="asset/profile.jpg" alt="profile" class="avatar">
-    <div>
-      <h1>Zhao Dong</h1>
-      <p>Applied Micro • Economic History • Political Economy</p>
-      <p><a href="mailto:zhao.dong@economics.ox.ac.uk">zhao.dong@economics.ox.ac.uk</a></p>
-      <nav>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#cv">CV</a>
-        <a href="#data">Data & Code</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </div>
+
+<header>
+  <h1>Dong Zhao</h1>
+  <p>Economics PhD Candidate, University of Oxford</p>
 </header>
+
+<nav>
+  <div class="container">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#cv">CV</a>
+    <a href="#data">Data</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
 <main class="container">
   <section id="about">
     <h2>About</h2>
-I am a job-market candidate in Economics (Ph.D. expected July 1, 2026). My research sits at the intersection of economic history and political economy, examining how political institutions and elite selection shape state capacity and economic performance. My job market paper studies the loyalty-competence trade-off in autocratic regimes, using comprehensive data on Late Qing China provincial appointments (1825-1911) to show that crisis type systematically determines elite composition: internal rebellions favor Manchu loyalists while external invasions elevate competent Han officials, with effects persisting over a decade. My broader research agenda explores these dynamics across Chinese history, combining long-run GDP series, dynasty-level panels on elite backgrounds, and micro evidence on kinship privilege to understand the institutional foundations of the Great Divergence.
-
-
+    <p>I am a PhD candidate in Economics at the University of Oxford, specializing in economic history, political economy, and development economics. My research examines elite selection, state capacity, and long-run economic development in historical China.</p>
+    
+    <p style="margin-top: 1rem;">My job market paper investigates how autocratic regimes balance political loyalty and administrative competence when appointing provincial elites, using comprehensive data from Late Qing China (1825-1911). I employ difference-in-differences methodology to identify causal effects of different crisis types on elite composition.</p>
   </section>
 
   <section id="research">
     <h2>Research</h2>
-
+    
     <article class="paper">
       <h3>Job Market Paper</h3>
-      <p><strong>Crisis and Elite Composition in Late Qing China: The Loyalty-Competence Trade-off, 1825-1911</strong> <span class="tag">JMP</span></p>
-      <p><em>Abstract:</em> How do autocratic regimes manage the trade-off between political loyalty and administrative competence when selecting elites? This paper examines provincial elite appointments in Late Qing China (1825-1911), exploiting temporal and geographic variation in internal rebellions and external invasions to identify causal effects of crises on bureaucratic composition. Using comprehensive personnel records covering 18,647 province-year observations across 11 major crises, I construct four measures of elite emphasis: average examination credentials, military position share, hierarchical network centrality, and maximum authority scores. Difference-in-differences estimates reveal three key findings. First, crises produce large immediate shifts in elite composition, with effects of 0.46-0.56 standard deviations. Second, these effects persist remarkably long—remaining significant over a decade after crisis resolution. Third, crisis type determines adjustment direction: internal threats decrease elite emphasis by 0.50 standard deviations (favoring Manchu loyalists), while external invasions increase it by 0.42 standard deviations (prioritizing competent Han officials), with differences statistically significant at p<0.001.</p>
-      <p>
-        <a class="btn" href="asset/Crisis_Elite_Qing_JMP.pdf">Paper (PDF)</a>
-        <a class="btn" href="#">Slides</a>
-        <a class="btn" href="#">Appendix</a>
-      </p>
+      <p><strong>Crisis and Elite Composition in Late Qing China: The Loyalty-Competence Trade-off, 1825-1911</strong></p>
+      
+      <p style="margin-top: 0.5rem;">This paper examines how autocratic regimes manage the trade-off between political loyalty and administrative competence during crises. Using comprehensive personnel records from Late Qing China and difference-in-differences methodology, I show that crisis type systematically determines elite composition: <strong>internal rebellions favor politically loyal Manchu bannermen</strong> (decreasing elite emphasis by 0.47-0.56 standard deviations), while <strong>external invasions favor competent Han Chinese examination graduates</strong> (increasing elite emphasis by 0.39-0.47 standard deviations), with effects persisting over a decade.</p>
+      
+      <p><a class="btn" href="#">PDF (coming soon)</a></p>
     </article>
 
     <article class="paper">
       <h3>Working Papers</h3>
-      <ul>
-        <li><strong>Information Capacity as a Fiscal Stabilizer</strong> — IV using shock‑induced variation in elite composition. <a href="#">PDF</a></li>
-        <li><strong>Coalition Reallocation Across Dynasties</strong> — Cross‑dynasty Top‑Tier validation (50+ regimes). <a href="#">PDF</a></li>
-      </ul>
+      <p><strong>Hereditary Succession and State Capacity in Imperial China, 207 BCE–1912 CE</strong></p>
+      <p style="margin-top: 0.5rem;">This paper examines how hereditary power succession shaped state capacity across 2,000 years of Chinese imperial history. Using comprehensive data on 2,895 prime ministers across 55 dynasties, I show that hereditary succession rates varied dramatically (from 23% in the Yuan Dynasty to 91% in the Eastern Han), with profound implications for bureaucratic quality and long-run economic development.</p>
+      <p><a class="btn" href="#">PDF (coming soon)</a></p>
     </article>
 
     <article class="paper">
-      <h3>Work in Progress</h3>
-      <ul>
-        <li>Text‑as‑Data measures from decrees and memorials; administrative replication with modern data.</li>
-      </ul>
+      <p><strong>Chinese Historical GDP Reconstruction, 2-1328 CE: The Great Convergence, The Transition, and The Divergence</strong></p>
+      <p style="margin-top: 0.5rem;">This paper reconstructs Chinese GDP from the Han Dynasty through the Yuan Dynasty, revealing three distinct periods in China's economic trajectory. The analysis shows how institutional quality—particularly merit-based versus hereditary elite selection—shaped long-run growth patterns and contributed to the Great Divergence.</p>
+      <p><a class="btn" href="#">PDF (coming soon)</a></p>
     </article>
   </section>
 
- <section id="teaching">
-  <h2>Teaching</h2>
-  <ul>
-    <li><strong>Introductory Economics</strong> (UG): Micro & macro foundations; supply–demand; welfare & market failures; growth & inflation; policy trade-offs; historical case studies.</li>
-    <li><strong>Core Macroeconomics</strong> (UG): Long-run growth (Solow & structural change), business cycles & measurement, monetary/fiscal policy, open-economy macro; applications with historical national accounts.</li>
-    <li><strong>Quantitative Economics</strong> (UG): Data wrangling in R/Python, reproducible workflows & version control; causal tools (DiD/event-study, IV, RD) and time-series basics; replication with historical datasets.</li>
-  </ul>
-</section>
-
-
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li><strong>Quantitative Economics</strong> (Somerville College, Oxford, 2025): Data analysis in R/Python, causal inference methods, time-series analysis, reproducible research workflows.</li>
+      <li><strong>Introductory Economics</strong> (Brasenose College, Oxford, 2022-2024): Microeconomic and macroeconomic foundations, market analysis, policy evaluation.</li>
+      <li><strong>Core Macroeconomics</strong> (Brasenose College, Oxford, 2022-2024): Long-run growth theory, business cycles, monetary and fiscal policy, open economy macroeconomics.</li>
+    </ul>
+  </section>
 
   <section id="cv">
     <h2>CV</h2>
-    <p><a class="btn" href="cv/Zhao_Dong_CV.pdf">Download CV (PDF)</a></p>
+    <p><a class="btn" href="cv/Dong_Zhao_CV.pdf">Download CV (PDF)</a></p>
+    <p><em>Last updated: November 2025</em></p>
   </section>
 
   <section id="data">
     <h2>Data & Code</h2>
+    <p><em>Replication materials and datasets will be made available upon publication.</em></p>
     <ul>
-      <li>Patrimonialism Index (annual) — <a href="#">repo</a> / <a href="#">data</a></li>
-      <li>Information Capacity Index — <a href="#">repo</a></li>
+      <li>Late Qing Provincial Officials Database (1825-1911)</li>
+      <li>Imperial China Prime Ministers Database (207 BCE-1912 CE)</li>
+      <li>Chinese Historical GDP Estimates (2-1328 CE)</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Department of Economics, University of Oxford<br>
-       Email: <a href="mailto:zhao.dong@economics.ox.ac.uk">zhao.dong@economics.ox.ac.uk</a></p>
+    <p>Department of Economics<br>
+       University of Oxford<br>
+       Manor Road Building, Manor Road<br>
+       Oxford OX1 3UQ, United Kingdom</p>
+    <p>Email: <a href="mailto:dong.zhao@economics.ox.ac.uk">dong.zhao@economics.ox.ac.uk</a></p>
   </section>
 </main>
 
 <footer class="container small">
-  <p>© Zhao Dong · Last updated <span id="updated"></span></p>
+  <p>© 2025 Dong Zhao · Last updated <span id="updated"></span></p>
 </footer>
 
 <script>
